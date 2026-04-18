@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: dev
+  labels:
+    app: nginx
 spec:
   replicas: 1
   selector:
